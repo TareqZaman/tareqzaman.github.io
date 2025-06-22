@@ -226,4 +226,14 @@ sections:
           captcha: true
     design:
       columns: '2'
+#  - block: markdown
+#    id: family
+#    content:
+#      title: Family Corner
+#      text: 
+#    design:
+#      columns: '1'
+#    background:
+#      color: 'white'
+#      text_color_light: false  
 ---
