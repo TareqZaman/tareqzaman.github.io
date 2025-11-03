@@ -1,14 +1,14 @@
 ---
-title: "Generalizing Lloyd's algorithm for graph clustering"
+title: "Optimized sparse matrix operations for reverse mode automatic differentiation"
 authors:
-- admin
 - Nicolas Nytko
 - Ali Taghibakhshi
+- admin
 - Scott MacLachlan
 - Luke N. Olson
 - Matthew West
-date: "2023-12-22T00:00:00Z"
-doi: "10.48550/arXiv.2303.01667"
+date: "2023-11-09T00:00:00Z"
+doi: "10.1137/24M1711832"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: ""
@@ -16,25 +16,27 @@ publishDate: ""
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "*SIAM Journal on Scientific Computing*"
+publication_short: "SISC"
 
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: 'SIAM Journal on Scientific Computing (SISC) 2025'
 
 tags:
-- Graph Clustering
+- Backpropagation
+- Automatic Differentiation
+- Sparse Matrix Operation
 featured: false
 
 # links:
-# - name: Custom Link
-#  url: ''
-url_pdf: https://arxiv.org/pdf/2303.01667.pdf
+# - name: "URL"
+#  url: 'https://epubs.siam.org/doi/abs/10.1137/24M1711832'
+url_pdf: https://arxiv.org/pdf/2212.05159.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
