@@ -29,6 +29,7 @@ marketing:
   verification:
     google: ''
     baidu: ''
+  google_analytics: ''
 
 # Site header
 
