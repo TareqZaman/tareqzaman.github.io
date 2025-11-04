@@ -3,6 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 ignoreErrors: ["deprecated"]
+googleAnalytics: ''
 
 title: 'Tareq Zaman' # Website name
 baseURL: 'https://tareqzaman.github.io' # Website URL
