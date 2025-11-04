@@ -3,64 +3,55 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: ["main"]
-  workflow_dispatch:  # Allows manual trigger
+  workflow_dispatch:  # Manual trigger option
 
-# Grant GITHUB_TOKEN permissions for Pages
+# Permissions for Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deploy
+# One concurrent deploy only
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build with Hugo
+  # Build job
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.136.2
+      HUGO_VERSION: 0.136.2  # Latest extended for Blox compatibility
       HUGO_ENV: production
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          lfs: true  # For any large files
+          lfs: true  # For any images/PDFs
 
       - name: Setup Node.js (for Blox npm deps)
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'  # Auto-caches based on package-lock.json
+          cache: 'npm'  # Uses your package-lock.json
 
       - name: Install npm dependencies
-        run: |
-          # Generate package-lock.json if missing (common in Blox starters)
-          if [ ! -f package-lock.json ]; then
-            npm install --package-lock-only
-          fi
-          npm ci  # Installs from lockfile
+        run: npm ci  # Fast install from lockfile
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3  # Updated from v2
+        uses: peaceiris/actions-hugo@v3  # Updated from v2 (supports latest Hugo)
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true  # Required for Blox modules/SASS
 
       - name: Build Hugo site
-        run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --gc --environment ${HUGO_ENV}
-        env:
-          # Pass for any env-specific config
-          HUGO_ENV: ${{ env.HUGO_ENV }}
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --gc --environment ${{ env.HUGO_ENV }}
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3  # Updated from v2 (fixes deprecation)
+        uses: actions/upload-pages-artifact@v3  # Updated from v2 (uses upload-artifact@v4 internally)
 
-  # Deploy to Pages
+  # Deploy job
   deploy:
     environment:
       name: github-pages
