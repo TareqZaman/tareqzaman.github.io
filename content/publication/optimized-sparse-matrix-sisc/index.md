@@ -34,13 +34,13 @@ tags:
 featured: false
 
 slug: optimized-sparse-matrix-sisc
-
+ 
 links:
- - name: "URL"
-   url: 'https://epubs.siam.org/doi/abs/10.1137/24M1711832'
-links:
+  - name: "URL"
+    url: 'https://epubs.siam.org/doi/abs/10.1137/24M1711832'
   - name: "arXiv PDF"
     url: 'https://arxiv.org/pdf/2212.05159.pdf'
+    
 url_pdf: 
 url_code: ''
 url_dataset: ''

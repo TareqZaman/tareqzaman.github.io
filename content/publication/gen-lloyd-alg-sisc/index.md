@@ -1,46 +1,37 @@
 ---
 title: "Generalizing Lloyd's algorithm for graph clustering"
 authors:
-- admin
-- Nicolas Nytko
-- Ali Taghibakhshi
-- Scott MacLachlan
-- Luke N. Olson
-- Matthew West
+  - admin
+  - Nicolas Nytko
+  - Ali Taghibakhshi
+  - Scott MacLachlan
+  - Luke N. Olson
+  - Matthew West
 date: "2023-12-22T00:00:00Z"
 doi: "10.1137/23M1556800"
 
-
-# Schedule page publish date (NOT publication's date).
 publishDate: ""
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
 publication_types: ["article-journal"]
-
-# Publication name and optional abbreviated publication name.
 publication: "*SIAM Journal on Scientific Computing*"
 publication_short: "SISC"
 
 abstract: auto
-
-# Summary. An optional shortened abstract.
 summary: 'SIAM Journal on Scientific Computing (SISC) 2024'
 
 tags:
-- Graph Clustering
-featured: false
+  - Graph Clustering
 
+featured: false
 slug: gen-lloyd-alg-sisc
 
 links:
- - name: "URL"
- url: 'https://epubs.siam.org/doi/10.1137/23M1556800'
-links:
+  - name: "URL"
+    url: 'https://epubs.siam.org/doi/10.1137/23M1556800'
   - name: "arXiv PDF"
     url: 'https://arxiv.org/pdf/2303.01667.pdf'
-url_pdf:
+
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -49,23 +40,12 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
   caption: ''
   focal_point: ""
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects: []
 
-# Slides (optional).
 slides: ""
-
 ---
-
