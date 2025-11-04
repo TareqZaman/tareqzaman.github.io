@@ -35,9 +35,9 @@ tags:
 - Diffusion
 featured: false
 
-# links:
-# - name: "URL"
-#   url: "https://link.springer.com/article/10.1007/s10596-020-09986-x"
+links:
+ - name: "URL"
+   url: "https://link.springer.com/article/10.1007/s10596-020-09986-x"
 url_pdf: ''
 url_code: ''
 url_dataset: ''

@@ -34,10 +34,13 @@ featured: false
 
 slug: gen-lloyd-alg-sisc
 
-#links:
-#- name: "URL"
-#url: 'https://epubs.siam.org/doi/10.1137/23M1556800'
-url_pdf: https://arxiv.org/pdf/2303.01667.pdf
+links:
+ - name: "URL"
+ url: 'https://epubs.siam.org/doi/10.1137/23M1556800'
+links:
+  - name: "arXiv PDF"
+    url: 'https://arxiv.org/pdf/2303.01667.pdf'
+url_pdf:
 url_code: ''
 url_dataset: ''
 url_poster: ''
