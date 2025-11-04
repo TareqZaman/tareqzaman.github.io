@@ -22,7 +22,7 @@ publication_types: ["article-journal"]
 publication: "*SIAM Journal on Scientific Computing*"
 publication_short: "SISC"
 
-abstract: ''
+abstract: auto
 
 # Summary. An optional shortened abstract.
 summary: 'SIAM Journal on Scientific Computing (SISC) 2025'
@@ -32,6 +32,8 @@ tags:
 - Automatic Differentiation
 - Sparse Matrix Operation
 featured: false
+
+slug: optimized-sparse-matrix-sisc
 
 # links:
 # - name: "URL"

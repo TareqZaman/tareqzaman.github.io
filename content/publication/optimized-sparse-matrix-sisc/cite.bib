@@ -1,10 +1,5 @@
 
-
-
-
-
-
-@article{doi:10.1137/24M1711832,
+@article{optimized-sparse-matrix-sisc,
 author = {Nytko, Nicolas and Taghibakhshi, Ali and Zaman, Tareq Uz and MacLachlan, Scott and Olson, Luke N. and West, Matthew},
 title = {Optimized Sparse Matrix Operations for Reverse Mode Automatic Differentiation},
 journal = {SIAM Journal on Scientific Computing},
@@ -13,23 +8,9 @@ number = {5},
 pages = {C1115-C1143},
 year = {2025},
 doi = {10.1137/24M1711832},
-
-URL = { 
-    
-        https://doi.org/10.1137/24M1711832
-    
-    
-
-},
-eprint = { 
-    
-        https://doi.org/10.1137/24M1711832
-    
-    
-
-}
-,
-    abstract = { Abstract. Sparse matrices are ubiquitous in computational science, enabling significant reductions in both compute time and memory overhead for problems with local connectivity. Simultaneously, recent work in automatic differentiation has lead to explosive growth in the adoption of accessible frameworks, such as PyTorch, TensorFlow, and JAX, which allow for the rapid development of optimization problems in computational settings. However, these existing tools lack support for sparse linear algebra, severely limiting their use in settings such as scientific machine-learning (SciML) and numerical PDEs, where the use of sparsity is often a necessity for achieving efficient algorithms. In this paper, we develop a set of performant kernels that allow for efficient automatic differentiation of expressions with sparse matrix values; fine-grained parallelism is exploited and performance is highlighted on massively-parallel graphics processing units (GPUs). We also present several applications that are enhanced by the use of these kernels, such as computing optimal transmission conditions for optimized Schwarz methods or finding sparse preconditioners for conjugate gradients. The use of backpropagation with these sparse operations results in massive speed gains when compared to their dense counterparts, with speedups ranging from \(3\times\) to \(50\times\) (or more), and enabling computation on larger problems than is possible using dense operations. Reproducibility of computational results.This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/nicknytko/numml/tree/main and in the supplementary materials (numml-main.zip [85.0KB]). }
+URL = {https://doi.org/10.1137/24M1711832},
+eprint = {https://doi.org/10.1137/24M1711832},
+abstract = { Abstract. Sparse matrices are ubiquitous in computational science, enabling significant reductions in both compute time and memory overhead for problems with local connectivity. Simultaneously, recent work in automatic differentiation has lead to explosive growth in the adoption of accessible frameworks, such as PyTorch, TensorFlow, and JAX, which allow for the rapid development of optimization problems in computational settings. However, these existing tools lack support for sparse linear algebra, severely limiting their use in settings such as scientific machine-learning (SciML) and numerical PDEs, where the use of sparsity is often a necessity for achieving efficient algorithms. In this paper, we develop a set of performant kernels that allow for efficient automatic differentiation of expressions with sparse matrix values; fine-grained parallelism is exploited and performance is highlighted on massively-parallel graphics processing units (GPUs). We also present several applications that are enhanced by the use of these kernels, such as computing optimal transmission conditions for optimized Schwarz methods or finding sparse preconditioners for conjugate gradients. The use of backpropagation with these sparse operations results in massive speed gains when compared to their dense counterparts, with speedups ranging from \(3\times\) to \(50\times\) (or more), and enabling computation on larger problems than is possible using dense operations.}
 }
 
 

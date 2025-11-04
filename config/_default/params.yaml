@@ -114,3 +114,9 @@ extensions:
 security:
   # Allow frame for embedding speaker notes in slides
   allow_frame: true
+
+bibliography:
+    enable: true
+    # Optional: control rendering
+    style: apa  # or mla, chicago, etc.
+    order: asc  # or desc

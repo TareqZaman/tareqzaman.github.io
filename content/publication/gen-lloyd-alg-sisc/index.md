@@ -23,7 +23,7 @@ publication_types: ["article-journal"]
 publication: "*SIAM Journal on Scientific Computing*"
 publication_short: "SISC"
 
-abstract: ''
+abstract: auto
 
 # Summary. An optional shortened abstract.
 summary: 'SIAM Journal on Scientific Computing (SISC) 2024'
@@ -32,9 +32,11 @@ tags:
 - Graph Clustering
 featured: false
 
-# links:
-# - name: "URL"
-#  url: 'https://epubs.siam.org/doi/10.1137/23M1556800'
+slug: gen-lloyd-alg-sisc
+
+#links:
+#- name: "URL"
+#url: 'https://epubs.siam.org/doi/10.1137/23M1556800'
 url_pdf: https://arxiv.org/pdf/2303.01667.pdf
 url_code: ''
 url_dataset: ''
@@ -43,6 +45,7 @@ url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
