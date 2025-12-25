@@ -1,0 +1,27 @@
+# IDEs
+.idea/
+
+# Hugo
+resources/
+public/
+jsconfig.json
+node_modules/
+go.sum
+.hugo_build.lock
+
+#
+.DS_Store
+.ipynb_checkpoints
+*~
+*.toc
+*.out
+*.log
+*.aux
+*.blg
+*.bbl
+*.synctex.gz
+__pycache__/
+*.fdb_latexmk
+*.fls
+*.pag
+*.thm

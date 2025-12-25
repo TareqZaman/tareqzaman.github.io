@@ -1,0 +1,44 @@
+
+@phdthesis{zaman_optimization_2023,
+	type = {doctoral},
+	title = {Optimization and coarse-grid selection for algebraic multigrid},
+	copyright = {thesis\_license},
+	url = {https://research.library.mun.ca/15952/},
+	abstract = {Multigrid methods are often the most efficient approaches for solving the very
+large linear systems that arise from discretized PDEs and other problems. Algebraic
+multigrid (AMG) methods are used when the discretization lacks the structure needed
+to enable more efficient geometric multigrid techniques. AMG methods rely in part
+on heuristic graph algorithms to achieve their performance. Reduction-based AMG
+(AMGr) algorithms attempt to formalize these heuristics.
+The main focus of this thesis is to develop e↵ective algebraic multigrid methods.
+A key step in all AMG approaches is the choice of the coarse/fine partitioning, aiming
+to balance the convergence of the iteration with its cost. In past work (MacLachlan
+and Saad, A greedy strategy for coarse-grid selection, SISC 2007), a constrained
+combinatorial optimization problem was used to define the “best” coarse grid within
+the setting of two-level reduction-based AMG and was shown to be NP-complete. In
+the first part of the thesis, a new coarsening algorithm based on simulated annealing
+has been developed to solve this problem. The new coarsening algorithm gives better
+results than the greedy algorithm developed previously.
+The goal of the second part of the thesis is to improve the classical AMGr method.
+Convergence factor bounds do not hold when AMGr algorithms are applied to matrices
+that are not diagonally dominant. In this part of our research, we present
+modifications to the classical AMGr algorithm that improve its performance on such
+matrices. For non-diagonally dominant matrices, we find that strength of connection
+plays a vital role in the performance of AMGr. To generalize the diagonal
+approximations of AFF used in classical AMGr, we use a sparse approximate inverse
+(SPAI) method, with nonzero pattern determined by strong connections, to define
+the AMGr-style interpolation operator, coupled with rescaling based on relaxed vectors.
+We present numerical results demonstrating the robustness of this approach for
+non-diagonally dominant systems.
+In the third part of this research, we have developed an improved deterministic
+coarsening algorithm that generalizes an existing technique known as Lloyd’s algorithm.
+The improved algorithm provides better control of the number of clusters than
+classical approaches and attempts to provide more “compact” groupings.},
+	language = {en},
+	urldate = {2024-04-01},
+	school = {Memorial University of Newfoundland},
+	author = {Zaman, Tareq Uz},
+	month = mar,
+	year = {2023},
+	file = {Full Text PDF:files/17/Zaman - 2023 - Optimization and coarse-grid selection for algebra.pdf:application/pdf;Snapshot:files/16/15952.html:text/html},
+}
